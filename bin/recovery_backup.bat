@@ -1,4 +1,5 @@
 @echo off
+echo '需要开启nginx，才能查看本地效果'  &  pause
 ::查看备份网站
 start "C:\Program Files\Google\Chrome\Application\chrome.exe" http://localhost:10084/#/Prayer/urgent
 echo '输入：1=还原到备份版本，2=退出'  &  pause
@@ -29,3 +30,9 @@ git push origin master:master
 ::chrome浏览器打开网站
 start "C:\Program Files\Google\Chrome\Application\chrome.exe" https://dongzm.github.io/#/Prayer/all
 echo '部署成功，按任意键退出'  &  pause
+:goback
+::删除index.html文件和static文件夹
+del G:\sublime\dongzm.github.io\index.html
+rmdir /s/q G:\sublime\dongzm.github.io\static
+git checkout ./
+echo '还原成功，任意键退出'  &  pause
