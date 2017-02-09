@@ -1,8 +1,6 @@
 @echo off
 title 还原备份版本
-echo '需要开启nginx，才能查看本地效果'  &  pause
-::查看备份网站
-start "C:\Program Files\Google\Chrome\Application\chrome.exe" http://localhost:10084/#/Prayer/urgent
+echo '需要开启nginx，才能查看本地效果'
 echo.
 echo Select a task:
 echo =============
