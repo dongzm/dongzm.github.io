@@ -1,17 +1,17 @@
 ::拷贝部署文件到直接文件夹
-copy /y .\dist\index.html g:\sublime\dongzm.github.io\ >> access.log
+copy /y .\dist\index.html g:\sublime\dongzm.github.io\
 ::创建static文件夹
-md g:\sublime\dongzm.github.io\static >> access.log
+md g:\sublime\dongzm.github.io\static
 ::拷贝部署文件到直接文件夹
-xcopy .\dist\static g:\sublime\dongzm.github.io\static/s >> access.log
+xcopy .\dist\static g:\sublime\dongzm.github.io\static/s
 ::回到当前git目录
-cd ../../dongzm.github.io >> access.log
+cd ../../dongzm.github.io
 ::添加文件到git暂存区
-git add ./ >> access.log
+git add ./
 ::提交暂存区到仓库区
-git commit -m [message] >> access.log
+git commit -m [message]
 ::上传master分支到远程仓库
-git push origin master:master >> access.log
+::git push origin master:master
 ::chrome浏览器打开网站
-start "C:\Program Files\Google\Chrome\Application\chrome.exe" https://dongzm.github.io/#/Prayer/all >> access.log
-echo '操作成功，按任意键退出'  &  pause >> access.log
+start "C:\Program Files\Google\Chrome\Application\chrome.exe" https://dongzm.github.io/#/Prayer/all
+echo '操作成功，按任意键退出'  &  pause
