@@ -54,5 +54,7 @@ echo '部署成功，按任意键退出'  &  pause & exit
 ::删除index.html文件和static文件夹
 del G:\sublime\dongzm.github.io\index.html
 rmdir /s/q G:\sublime\dongzm.github.io\static
+cd G:\sublime\dongzm.github.io
+g:
 git checkout ./
 echo '还原成功，任意键退出'  &  pause & exit
