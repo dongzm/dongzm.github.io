@@ -33,7 +33,7 @@ xcopy G:\sublime\workspace\warder\dist\static g:\sublime\dongzm.github.io\static
 ::开启nginx
 ::start nginx
 ::chrome浏览器打开网站查看当前安装内容
-start "C:\Program Files\Google\Chrome\Application\chrome.exe" http://localhost:10083/#/Prayer/urgent
+start "C:\Program Files\Google\Chrome\Application\chrome.exe" http://127.0.0.1:10083/#/Prayer/urgent
 echo '安装成功'
 echo.
 echo Select a task:
